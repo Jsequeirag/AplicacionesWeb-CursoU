@@ -1,0 +1,29 @@
+.info {
+  min-width: 100vh;
+  min-height: 90vh;
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+
+  background-color: rgb(248, 248, 248) !important;
+}
+.info-driver-image {
+  border-radius: 3px;
+  position: relative;
+  right: 15px !important;
+}
+
+.info-intro {
+  z-index: 1;
+  position: relative;
+  right: -15px !important;
+  background-color: white;
+  padding: 30px;
+  border-radius: 3px;
+}
+.info-button {
+  margin: 10px !important;
+}
