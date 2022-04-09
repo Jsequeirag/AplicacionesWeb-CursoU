@@ -11,6 +11,24 @@
     class="example-icon"
     routerLink="/"
     aria-label="Example icon-button with menu icon"
-  > </button>--><button class="nav-button" mat-stroked-button>SignIn</button
-  ><button class="nav-button" mat-stroked-button>LogIns</button>
+  > </button>-->
+  <a href="/signup"
+    ><button id="signup-button" class="nav-button" mat-stroked-button>
+      Signup
+    </button></a
+  >
+  <a href="/login">
+    <button id="login-button" class="nav-button" mat-stroked-button>
+      LogIn
+    </button></a
+  >
+
+  <button
+    id="logout-button"
+    class="nav-button"
+    (click)="logout()"
+    mat-stroked-button
+  >
+    logout
+  </button>
 </mat-toolbar>

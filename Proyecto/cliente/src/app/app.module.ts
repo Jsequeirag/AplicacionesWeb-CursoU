@@ -11,8 +11,25 @@ import { InfoComponent } from './components/index/info/info.component';
 import { IndexComponent } from './components/index/index/index.component';
 import { TestimonialsComponent } from './components/index/testimonials/testimonials.component';
 import { ContactComponent } from './components/index/contact/contact.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { DriverComponent } from './components/dashboards/driver/driver.component';
+import { IndexdashboardComponent } from './components/dashboards/indexdashboard/indexdashboard.component';
+import { RiderComponent } from './components/dashboards/rider/rider.component';
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, InfoComponent, IndexComponent, TestimonialsComponent, ContactComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    InfoComponent,
+    IndexComponent,
+    TestimonialsComponent,
+    ContactComponent,
+    LoginComponent,
+    SignupComponent,
+    DriverComponent,
+    IndexdashboardComponent,
+    RiderComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
