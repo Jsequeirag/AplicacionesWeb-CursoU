@@ -16,6 +16,11 @@ import { SignupComponent } from './components/signup/signup.component';
 import { DriverComponent } from './components/dashboards/driver/driver.component';
 import { IndexdashboardComponent } from './components/dashboards/indexdashboard/indexdashboard.component';
 import { RiderComponent } from './components/dashboards/rider/rider.component';
+
+import { VehiclesComponent } from './components/driversections/vehicles/vehicles.component';
+
+import { VehiclesTablesComponent } from './components/driversections/vehicles/vehicles-tables/vehicles-tables.component';
+import { VehiclesFormComponent } from './components/driversections/vehicles/vehicles-form/vehicles-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +34,10 @@ import { RiderComponent } from './components/dashboards/rider/rider.component';
     DriverComponent,
     IndexdashboardComponent,
     RiderComponent,
+
+    VehiclesComponent,
+    VehiclesTablesComponent,
+    VehiclesFormComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-//Angular Material
+//Angular Materialz
+import {} from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -27,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [],
   imports: [
+    MatCheckboxModule,
     MatCardModule,
     CommonModule,
     MatSliderModule,
@@ -49,6 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatDialogModule,
   ],
   exports: [
+    MatCheckboxModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
@@ -59,6 +63,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatProgressSpinnerModule,
     MatToolbarModule,
     MatIconModule,
+    MatTableModule,
   ],
 })
 export class SharedModule {}

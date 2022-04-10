@@ -1,0 +1,53 @@
+<div class="vehicle-table-container">
+  <div class="scroll">
+    <h1>Vehicles</h1>
+    <table>
+      <thead>
+        <th>platenumber</th>
+        <th>model</th>
+        <th>year</th>
+        <th>details</th>
+        <th>edit</th>
+        <th>delete</th>
+      </thead>
+      <tbody *ngFor="let vehicle of vehicles">
+        <tr [id]="vehicle._id">
+          <td>{{ vehicle.platenumber }}</td>
+          <td>{{ vehicle.model }}</td>
+          <td>{{ vehicle.year }}</td>
+          <td>
+            <button
+              id="vehicle-details-button"
+              class="nav-button details-button"
+              mat-stroked-button
+              (click)="detailsFunc(vehicle)"
+            >
+              details
+            </button>
+          </td>
+          <td>
+            <button
+              id="vehicle-edit-button"
+              class="nav-button edit-button"
+              mat-stroked-button
+              (click)="editFunc(vehicle)"
+            >
+              edit
+            </button>
+          </td>
+          <td>
+            <button
+              id="vehicle-delete-button"
+              class="nav-button delete-button"
+              mat-stroked-button
+              (click)="deleteFunc(vehicle._id)"
+            >
+              delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button (click)="refresh()" class="vehicle-new-button">new</button>
+</div>
