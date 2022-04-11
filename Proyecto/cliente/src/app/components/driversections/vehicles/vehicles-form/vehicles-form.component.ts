@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
 import { VehicleService } from 'src/app/services/vehicle.service/vehicle.service';
 import { TokenStorageService } from 'src/app/services/tokenStorage.service/token-storage.service';
 
@@ -12,7 +11,6 @@ import { TokenStorageService } from 'src/app/services/tokenStorage.service/token
 })
 export class VehiclesFormComponent implements OnInit {
   public form: FormGroup;
-
   drivers: any;
   token: any;
   constructor(

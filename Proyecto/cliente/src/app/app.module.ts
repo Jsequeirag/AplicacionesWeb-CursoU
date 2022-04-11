@@ -16,11 +16,13 @@ import { SignupComponent } from './components/signup/signup.component';
 import { DriverComponent } from './components/dashboards/driver/driver.component';
 import { IndexdashboardComponent } from './components/dashboards/indexdashboard/indexdashboard.component';
 import { RiderComponent } from './components/dashboards/rider/rider.component';
-
 import { VehiclesComponent } from './components/driversections/vehicles/vehicles.component';
-
+import { DriversFormComponent } from './components/driversections/drivers/drivers-form/drivers-form.component';
+import { DriversTableComponent } from './components/driversections/drivers/drivers-table/drivers-table.component';
+import { DriversComponent } from './components/driversections/drivers/drivers.component';
 import { VehiclesTablesComponent } from './components/driversections/vehicles/vehicles-tables/vehicles-tables.component';
 import { VehiclesFormComponent } from './components/driversections/vehicles/vehicles-form/vehicles-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,9 @@ import { VehiclesFormComponent } from './components/driversections/vehicles/vehi
     DriverComponent,
     IndexdashboardComponent,
     RiderComponent,
-
+    DriversTableComponent,
+    DriversFormComponent,
+    DriversComponent,
     VehiclesComponent,
     VehiclesTablesComponent,
     VehiclesFormComponent,

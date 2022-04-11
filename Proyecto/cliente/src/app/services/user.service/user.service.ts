@@ -8,10 +8,12 @@ import { environment } from 'src/environments/environment';
 export class UserService {
   constructor() {}
 
-  signIn(data: any): any {
-    Axios.post(`${environment.apiUrl}/auth/signin`, data).then((response) => {
-      console.log(response);
+  async signIn(data: any) {
+    var response;
+    await Axios.post(`${environment.apiUrl}/auth/signin`, data).then((r) => {
+      response = r;
     });
+    return response;
   }
   async signUp(data: any) {
     var response;

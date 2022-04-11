@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 //Angular Materialz
 import {} from '@angular/material/checkbox';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -29,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [],
   imports: [
+    MatNativeDateModule,
+    MatDatepickerModule,
     MatCheckboxModule,
     MatCardModule,
     CommonModule,
@@ -52,6 +57,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatDialogModule,
   ],
   exports: [
+    MatNativeDateModule,
+    MatDatepickerModule,
     MatCheckboxModule,
     MatCardModule,
     MatFormFieldModule,

@@ -25,9 +25,6 @@ export class VehiclesComponent implements OnInit {
     this.getVehiclesById();
     this.getDriverById();
   }
-/* -------------------------------------------------------------------------- */
-/*                                   refresh                                  */
-/* -------------------------------------------------------------------------- */
 
   async getVehiclesById() {
     this.id = this.tokenStorage.getUser()._id;
