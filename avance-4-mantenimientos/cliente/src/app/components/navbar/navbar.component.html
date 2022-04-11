@@ -1,0 +1,34 @@
+<mat-toolbar class="nav">
+  <span
+    ><img src="/assets/images/icons.png" height="35" width="35" alt=""
+  /></span>
+  <span class="example-spacer"></span>
+
+  <span class="example-spacer"></span>
+  <!-- <button mat-button routerLink="/dashboard">LogOut</button> -->
+  <!-- <button
+    mat-icon-button
+    class="example-icon"
+    routerLink="/"
+    aria-label="Example icon-button with menu icon"
+  > </button>-->
+  <a href="/signup"
+    ><button id="signup-button" class="nav-button" mat-stroked-button>
+      Signup
+    </button></a
+  >
+  <a href="/login">
+    <button id="login-button" class="nav-button" mat-stroked-button>
+      LogIn
+    </button></a
+  >
+
+  <button
+    id="logout-button"
+    class="nav-button"
+    (click)="logout()"
+    mat-stroked-button
+  >
+    logout
+  </button>
+</mat-toolbar>

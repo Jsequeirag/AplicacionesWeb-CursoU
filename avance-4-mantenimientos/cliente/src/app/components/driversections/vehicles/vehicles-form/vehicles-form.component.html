@@ -1,0 +1,82 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                              details form                               -->
+<!-- ----------------------------------------------------------------------- -->
+
+<input type="text" id="action" hidden />
+<form id="vehicles-form" [formGroup]="form" (ngSubmit)="signup()">
+  <h1 id="message">New vehicle</h1>
+  <input id="editid" hidden />
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>year</mat-label>
+    <input
+      matInput
+      type="number"
+      id="edityear"
+      autocomplete="off"
+      formControlName="anio"
+    />
+  </mat-form-field>
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>modelo</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editmodel"
+      autocomplete="off"
+      formControlName="modelo"
+    />
+  </mat-form-field>
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>platenumber</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editplatenumber"
+      autocomplete="off"
+      formControlName="placa"
+    />
+  </mat-form-field>
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>color</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editcolor"
+      autocomplete="off"
+      formControlName="color"
+    />
+  </mat-form-field>
+  <mat-label class="drivers-label">Drivers:</mat-label>
+  <div class="vehicles-form-drivers" *ngFor="let driver of drivers">
+    <mat-checkbox class="vehicle-form-checkbox" [id]="driver._id">
+      {{ driver.name }}{{ driver.lastname }}
+    </mat-checkbox>
+  </div>
+  <button (click)="refresh()" type="submit" mat-raised-button>Confirm</button>
+</form>
+<!-- ----------------------------------------------------------------------- -->
+<!--                              details form                               -->
+<!-- ----------------------------------------------------------------------- -->
+<div id="detail-form-container" class="detail-form-container">
+  <div class="details-form">
+    <form id="details-vehicle-form">
+      <label for="fname">plantenumber</label>
+      <input type="text" class="vehicle-form-input" id="platenumber" />
+      <label for="fname">year</label>
+      <input type="text" class="vehicle-form-input" id="year" />
+      <label for="fname">model</label>
+      <input type="text" class="vehicle-form-input" id="model" />
+      <label for="fname">color</label>
+      <input type="text" class="vehicle-form-input" id="color" />
+      <label for="fname">valoration</label>
+      <input type="text" class="vehicle-form-input" id="valoration" />
+      <label for="fname">status</label>
+      <input type="text" class="vehicle-form-input" id="status" />
+    </form>
+  </div>
+  <div class="details-drivers">
+    <label for="fname">Drivers: </label>
+    <textarea name="" id="" cols="30" rows="10" id="drivers"> </textarea>
+  </div>
+</div>
+<div class="details-googlemaps">google maps</div>
