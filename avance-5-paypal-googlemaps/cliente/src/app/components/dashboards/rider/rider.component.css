@@ -1,0 +1,26 @@
+.rider {
+  min-height: 90vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.section {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.section:hover {
+  transform: translateY(-3px);
+}
+a:link {
+  text-decoration: none;
+}

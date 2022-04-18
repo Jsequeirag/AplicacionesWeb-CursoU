@@ -1,0 +1,19 @@
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+#perfil-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center !important;
+  background-color: rgb(241, 238, 238);
+  border-radius: 20px;
+  width: 50%;
+}
+
+.driver-form-input {
+  width: 200px !important;
+  margin: 5px;
+}

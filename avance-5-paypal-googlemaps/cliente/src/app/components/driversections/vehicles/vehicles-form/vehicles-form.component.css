@@ -1,0 +1,52 @@
+#vehicles-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center !important;
+  padding: 20px;
+  background-color: rgb(241, 238, 238);
+  border-radius: 20px;
+  min-height: 60vh;
+}
+
+.vehicles-form-drivers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.vehicle-form-checkbox {
+  margin: 5px;
+}
+.drivers-label {
+  text-align: start;
+}
+
+#details-vehicle-form {
+  display: flex;
+  flex-direction: column;
+  text-align: start !important;
+  justify-content: start;
+}
+.detail-form-container {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(241, 238, 238);
+  border-radius: 10px;
+  border: 0.5px solid black;
+}
+.details-drivers {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.details-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.vehicle-form-input {
+  width: 200px !important;
+  margin: 5px;
+}

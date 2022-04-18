@@ -1,0 +1,48 @@
+.vehicle-table-container {
+  padding: 20px;
+  background-color: rgb(241, 238, 238);
+  border-radius: 20px;
+  min-height: 60vh;
+}
+.scroll {
+  height: 60vh;
+  max-height: 60vh;
+  overflow: scroll;
+}
+table {
+  width: 100%;
+}
+table {
+  border-radius: 10px;
+
+  padding-top: 20px;
+  padding: 20px;
+}
+tr {
+  box-shadow: 0 0 0 1px black;
+  border-radius: 1px;
+}
+td {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+caption {
+  align-items: start;
+}
+.details-button {
+  background-color: rgb(213, 244, 255);
+}
+.delete-button {
+  background-color: rgb(234, 234, 234);
+}
+.edit-button {
+  background-color: rgb(202, 225, 255);
+}
+.vehicle-new-button {
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
