@@ -1,0 +1,12 @@
+{
+  "config": {
+    "googleMaps": {
+      "apiKey": "AIzaSyDHbtrzS3mgRA7p4Uiio8Kthb6cUBD2MT0"
+    },
+    "permissions": [
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_FINE_LOCATION",
+      "FOREGROUND_SERVICE"
+    ]
+  }
+}

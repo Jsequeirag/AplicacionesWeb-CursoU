@@ -1,0 +1,97 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                            create  and edit                             -->
+<!-- ----------------------------------------------------------------------- -->
+<input type="text" id="action" hidden />
+<form id="driver-form" [formGroup]="form" (ngSubmit)="signup()">
+  <h1 id="message">New driver</h1>
+  <input id="editid" hidden />
+
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>name</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editname"
+      autocomplete="off"
+      formControlName="name"
+    />
+  </mat-form-field>
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>lastname</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editlastname"
+      autocomplete="off"
+      formControlName="lastname"
+    />
+  </mat-form-field>
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>identification</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editidentification"
+      autocomplete="off"
+      formControlName="identification"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>birthdate</mat-label>
+    <input
+      matInput
+      type="date"
+      id="editbirthdate"
+      autocomplete="off"
+      formControlName="birthdate"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>licenseclass</mat-label>
+    <input
+      matInput
+      type="text"
+      id="editlicenseclass"
+      autocomplete="off"
+      formControlName="licenseclass"
+    />
+  </mat-form-field>
+  <mat-form-field class="ancho" appearance="fill">
+    <mat-label>explicense</mat-label>
+    <input
+      matInput
+      type="date"
+      id="editexplicense"
+      autocomplete="off"
+      formControlName="explicense"
+    />
+  </mat-form-field>
+  <button (click)="refresh()" type="submit" mat-raised-button>Confirm</button>
+</form>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 details                                 -->
+<!-- ----------------------------------------------------------------------- -->
+<div id="detail-form-container" class="detail-form-container">
+  <div class="details-form">
+    <form id="details-driver-form">
+      <label for="fname">name</label>
+      <input type="text" class="driver-form-input" id="details-name" />
+      <label for="fname">lastname</label>
+      <input type="text" class="driver-form-input" id="details-lastname" />
+      <label for="fname">identification</label>
+      <input
+        type="text"
+        class="driver-form-input"
+        id="details-identification"
+      />
+      <label for="fname">birthdate</label>
+      <input type="text" class="driver-form-input" id="details-birthdate" />
+      <label for="fname">licenseclass</label>
+      <input type="text" class="driver-form-input" id="details-licenseclass" />
+      <label for="fname">explicense</label>
+      <input type="text" class="driver-form-input" id="details-explicense" />
+    </form>
+  </div>
+</div>

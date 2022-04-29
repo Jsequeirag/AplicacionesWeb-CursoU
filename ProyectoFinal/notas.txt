@@ -1,0 +1,14 @@
+--------activar el autocomplete
+npm install typings –D
+--------crear proyecto
+ng new nombre proyecto
+--------corre proyecto
+ng serve
+
+--------Comano permitir correr cualquier 
+Set-ExecutionPolicy Unrestricted 
+-------- crea un componte en una raíz
+ng generate component componentes/nuevoComponente
+
+-crear servicio
+ng generate service clientes

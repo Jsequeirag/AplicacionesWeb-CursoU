@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Information</h1>
+<div mat-dialog-content class="dialog">
+  <div class="scroll-dialog">
+    <div class="googgle-map">
+      <div id="googleMapInvoice"></div>
+    </div>
+    <p>
+      Distance:
+      <span id="driver-distance"></span>
+    </p>
+    <p>
+      Duration:
+      <span id="driver-duration"></span>
+    </p>
+    <div class="info-dialog">
+      Driver:
+      <div class="driver-image"></div>
+
+      <p>
+        Name: {{data.idvehicle.drivers[0].name}}
+        {{data.idvehicle.drivers[0].lastname}}
+      </p>
+      Car:
+      <div class="car-image"></div>
+      <p>Platenumber {{data.idvehicle.platenumber}}</p>
+    </div>
+  </div>
+</div>

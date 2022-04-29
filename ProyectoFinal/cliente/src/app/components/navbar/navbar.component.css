@@ -1,0 +1,16 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.nav-button {
+  margin: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+.nav-button:hover {
+  background-color: white;
+  color: black;
+}
+.nav {
+  background-color: #000000;
+  min-height: 10vh;
+}

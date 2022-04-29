@@ -1,0 +1,37 @@
+.info {
+  min-width: 100vh;
+  min-height: 90vh;
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #f5f5f5,
+    #ebebeb,
+    #e1e1e1,
+    #d7d7d7
+  );
+  background-attachment: fixed;
+}
+.info-driver-image {
+  border-radius: 3px;
+  position: relative;
+  right: 15px !important;
+}
+
+.info-intro {
+  z-index: 1;
+  position: relative;
+  right: -15px !important;
+  background-color: white;
+  padding: 30px;
+  border-radius: 3px;
+}
+.info-button {
+  margin: 10px !important;
+}
+

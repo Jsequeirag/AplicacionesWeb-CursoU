@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <mat-toolbar>
+    <span>Facturas</span>
+  </mat-toolbar>
+</div>
+<div class="contenido">
+  <div *ngIf="userInvoices.length == 0">
+    <p>No existen datos para mostrar</p>
+  </div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="Date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
+      <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="Amount">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
+      <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Valoration">
+      <th mat-header-cell *matHeaderCellDef>Valoration</th>
+      <td mat-cell *matCellDef="let element">{{ element.valoration }}</td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.idclient.name }} {{ element.idclient.lastname }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Details">
+      <th mat-header-cell *matHeaderCellDef>Details</th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-button mat-raised-button (click)="openDialog(element)">
+          Details
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

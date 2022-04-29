@@ -1,0 +1,62 @@
+.driver {
+  min-height: 90vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.section {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.section:hover {
+  transform: translateY(-3px);
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a {
+  color: white;
+}
+.vehicle-section {
+  background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.drivers-section {
+  background-image: url("https://blog.drivedifferent.com/hs-fs/hubfs/SMI-BLOG-Ways-to-Improve-Drivers-Happiness%20(1).jpg?width=1173&name=SMI-BLOG-Ways-to-Improve-Drivers-Happiness%20(1).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.reports-section {
+  background-image: url("https://files.nc.gov/medicaid/styles/carousel/public/images/2021-08/Medicaid-slider-Reports.jpg?VersionId=3VFmK_Faqdya.xwZORA6jw3yMjNWXM4E&itok=ppwQf82g");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.perfil-section {
+  background-image: url("https://www.startwright.asia/wp-content/uploads/2018/11/businessman-profile-cartoon_18591-58479.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}

@@ -1,0 +1,53 @@
+.rider {
+  min-height: 90vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.section {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.section:hover {
+  transform: translateY(-3px);
+}
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+.rider-invoices-section {
+  background-image: url("https://www.arintass.com/wp-content/uploads/2020/07/Content-of-the-invoices-in-Spain-e1595847920198.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.rider-perfil-section {
+  background-image: url("https://d500.epimg.net/cincodias/imagenes/2016/07/04/lifestyle/1467646262_522853_1467646344_noticia_normal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.rider-ride-section {
+  background-image: url("https://zenduwork.com/wp-content/uploads/2017/04/routing-pointa-ppointb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}

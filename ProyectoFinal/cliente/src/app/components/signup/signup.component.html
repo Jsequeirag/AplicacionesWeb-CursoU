@@ -1,0 +1,81 @@
+<app-navbar></app-navbar>
+<div class="signin">
+  <div class="signin-left-side"></div>
+  <div class="signin-right-side">
+    <form id="contact-form" [formGroup]="form" (ngSubmit)="signup()">
+      <h3 id="message" hidden>user really exists</h3>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>email</mat-label>
+        <input
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="email"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>user</mat-label>
+        <input matInput type="text" autocomplete="off" formControlName="user" />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>password</mat-label>
+        <input
+          matInput
+          type="password"
+          autocomplete="off"
+          formControlName="password"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>name</mat-label>
+        <input matInput type="text" autocomplete="off" formControlName="name" />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>lastname</mat-label>
+        <input
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="lastname"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>birthdate</mat-label>
+        <input
+          matInput
+          type="date"
+          autocomplete="off"
+          formControlName="birthdate"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>location</mat-label>
+        <input
+          id="address"
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="location"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>phone</mat-label>
+        <input
+          matInput
+          type="number"
+          autocomplete="off"
+          formControlName="phone"
+        />
+      </mat-form-field>
+
+      <input id="roles" type="text" hidden />
+
+      <div class="user-roles">
+        <div id="rider" class="rider" (click)="rider()">Rider</div>
+        <div id="driver" class="driver" (click)="driver()">Driver</div>
+      </div>
+      <button type="submit" mat-raised-button>signup</button>
+    </form>
+  </div>
+</div>
+<script src="../utils/selectRole.ts"></script>

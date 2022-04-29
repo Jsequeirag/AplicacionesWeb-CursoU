@@ -1,0 +1,175 @@
+.ride {
+  min-height: 90vh;
+  display: flex;
+}
+
+/* ------------------------------- user ride ------------------------------- */
+.user-ride {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+}
+
+.origin-destiny {
+  display: flex;
+  flex: 10%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.origin-destiny mat-form-field {
+  width: 80%;
+}
+.origin-destiny button {
+  margin-left: 40px;
+}
+.cost {
+  display: flex;
+  flex: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cost mat-form-field {
+  width: 90%;
+}
+.googgle-map {
+  display: flex;
+  flex: 70%;
+  background-color: white;
+}
+
+#googleMap {
+  width: 100%;
+  height: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}
+button {
+}
+/* ----------------------------- driver available ---------------------------- */
+
+.driver-available {
+  display: flex;
+  flex: 50%;
+  background-color: rgb(250, 250, 250);
+  flex-wrap: wrap;
+}
+
+.driver-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0px 2px 10px -5px;
+}
+
+.driver-card .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+.driver-card .image {
+  display: flex;
+  height: 60%;
+  border-radius: 10px;
+  background-image: url(https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/GettyImages-1092658864_thumb-732x549.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.driver-card .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    modal                                   */
+/* -------------------------------------------------------------------------- */
+.dialog {
+  border-radius: 10px !important;
+  height: 400px;
+  width: 300px;
+  max-width: 300px;
+  padding: 10px;
+}
+.dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.scroll-dialog {
+  overflow-y: scroll;
+}
+.paypal-button {
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: medium;
+  font-weight: 700;
+  color: rgb(83, 83, 255);
+  margin: 5px;
+}
+#googleMapDriver {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px !important;
+}
+h1 {
+  text-align: center;
+}
+.pay {
+  color: #002c8a;
+}
+.pal {
+  color: #009be1;
+}
+.car-image {
+  width: 100%;
+  height: 130px;
+  background-image: url(https://b.rgbimg.com/users/m/mz/mzacha/600/n9vZGok.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.info-dialog {
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  padding: 10px;
+  margin: 2px;
+}
+.driver-image {
+  background-image: url(https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/GettyImages-1092658864_thumb-732x549.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.info-drivers {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.message-drivers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 10px -5px;
+}

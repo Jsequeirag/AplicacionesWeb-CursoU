@@ -1,0 +1,23 @@
+.valoration {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.message {
+  text-align: center;
+
+  padding: 50px;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 10px -5px;
+}
+.checked {
+  color: orange;
+  transform: scale(3);
+}
+.star-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}

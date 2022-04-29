@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="login">
+  <div class="login-left-side"></div>
+  <div class="login-right-side">
+    <form id="contact-form" [formGroup]="form" (ngSubmit)="login()">
+      <h3 id="message" hidden>User doesn't exist</h3>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>user</mat-label>
+        <input matInput type="text" autocomplete="off" formControlName="user" />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>password</mat-label>
+        <input
+          matInput
+          type="password"
+          autocomplete="off"
+          formControlName="password"
+        />
+      </mat-form-field>
+      <button type="submit" mat-raised-button>login</button>
+    </form>
+  </div>
+</div>

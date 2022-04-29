@@ -1,0 +1,36 @@
+.login {
+  display: flex;
+
+  min-height: 90vh;
+}
+.login-right-side {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-form {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+form h3 {
+  border-radius: 5px;
+  text-align: center;
+  color: red;
+  background-color: rgb(255, 218, 218);
+  margin-bottom: 5px;
+}
+.login-left-side {
+  flex: 50%;
+  background-image: url("../../../assets/images/night-city.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

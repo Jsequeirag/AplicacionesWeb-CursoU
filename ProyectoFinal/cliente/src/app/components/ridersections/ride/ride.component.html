@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+<div class="ride">
+  <div class="user-ride">
+    <div class="origin-destiny">
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Destination</mat-label>
+        <input
+          id="address"
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="location"
+        />
+      </mat-form-field>
+
+      <button
+        (click)="sendDestination()"
+        type="submit"
+        mat-button
+        mat-raised-button
+      >
+        Go
+      </button>
+    </div>
+    <div class="cost">
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Distance</mat-label>
+        <input
+          id="distance-input"
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="location"
+          [disabled]="true"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Duration</mat-label>
+        <input
+          id="duration-input"
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="location"
+          [disabled]="true"
+        />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label disabled>Cost</mat-label>
+        <input
+          id="cost-input"
+          matInput
+          type="text"
+          autocomplete="off"
+          formControlName="location"
+          [disabled]="true"
+        />
+      </mat-form-field>
+    </div>
+    <div class="googgle-map">
+      <div id="googleMap"></div>
+    </div>
+  </div>
+  <div class="info-drivers" *ngIf="vehicles.length == 0">
+    <div class="message-drivers"><h2>No drivers available</h2></div>
+  </div>
+  <div class="driver-available" *ngFor="let vehicle of vehicles">
+    <div class="driver-card">
+      <div class="header">{{ vehicle.drivers[0].name }}</div>
+      <div class="image"></div>
+      <div class="footer">
+        <button
+          mat-button
+          type="submit"
+          mat-raised-button
+          (click)="openDialog(vehicle)"
+        >
+          Select
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

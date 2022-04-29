@@ -1,0 +1,13 @@
+.vehicles {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+.creating-editing-section {
+  flex: 50%;
+  padding: 50px;
+}
+.vehicles-section {
+  flex: 50%;
+  padding: 50px;
+}
